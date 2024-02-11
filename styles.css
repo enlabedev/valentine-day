@@ -1,0 +1,54 @@
+:root{
+  --heart-color:#ff5873;
+  --background-color: #ebc8c0;
+  --white:#fff;
+}
+body{
+  font-family: Tahoma;
+  background-color: var(--background-color);
+  margin:0;
+  padding:0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  color:var(--heart-color);
+  background-image:url('images/mini-hearth.png');
+  background-size: 75%;
+}
+.card{
+  text-align: center;
+}
+.title{
+  font-size: 28px;
+}
+.animation{
+  width: 280px;
+  display: inline-block;
+}
+.img-fluid{
+  width: 100%;
+  height: auto;
+}
+.text{
+  padding:20px;
+  font-size:18px;
+}
+.button{
+  background: var(--heart-color);
+  color:var(--white);
+  border: 0 none;
+  padding:10px 30px;
+  text-align: center;
+  display: inline-block;
+  margin:0 10px;
+}
+.button.button__negative{
+  background: var(--white);
+  color: var(--heart-color);
+}
+.button.button__error{
+  width: 100%;
+  display: none;
+}
