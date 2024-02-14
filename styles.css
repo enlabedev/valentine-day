@@ -3,11 +3,12 @@
   --background-color: #ebc8c0;
   --white:#fff;
 }
+@font-face {
+  font-family: Love;
+  src: url("fonts/Love.ttf");
+}
 body{
-  font-family: Tahoma;
   background-color: var(--background-color);
-  margin:0;
-  padding:0;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -17,19 +18,58 @@ body{
   background-image:url('images/mini-hearth.png');
   background-size: 75%;
 }
-.card{
-  text-align: center;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Love;
 }
+.card{
+  padding: 2rem;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+.card__body{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card__text {
+  display: grid;
+  gap: 1rem;
+  max-width: 28rem;
+}
+
+.card__message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
 .title{
-  font-size: 28px;
+  font-size: 2.5rem;
 }
 .animation{
-  width: 280px;
-  display: inline-block;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .img-fluid{
   width: 100%;
-  height: auto;
+  max-width: 280px;
+  max-height: 10rem;
 }
 .text{
   padding:20px;
@@ -38,6 +78,7 @@ body{
 .button{
   background: var(--heart-color);
   color:var(--white);
+  cursor: pointer;
   border: 0 none;
   padding:10px 30px;
   text-align: center;

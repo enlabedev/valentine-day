@@ -1,22 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>San Valentine</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>San Valentín</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div class="card">
-        <h1 class="title">¿Mi niña, te gustaria ser mi San Valentin?</h1>
-        <div class="animation">
-            <img src="images/cat-01.gif" alt="San Valentin" class="cat img-fluid">
+        <div class="card__header">
+            <h1 class="title">Mi niña</h1>
         </div>
-        <div class="text"></div>
-        <button class="button">Sí :3</button>
-        <button class="button button__negative">No :c</button>
-        <button class="button button__error">Error debemos reiniciar</button>
+        <div class="card__body">
+            <div class="card__text">
+                <p>
+                  Eres la persona más especial que he conocido, me haces muy feliz y me
+                  encanta estar contigo.
+                </p>
+                <p>
+                  Quiero que sepas que te amo mucho y que siempre estaré para ti.
+                </p>
+                <p>
+                  ¿Quieres ser mi Valentín
+                </p>
+            </div>
+            <div class="animation">
+              <img src="images/cat-01.gif" alt="San Valentín" class="cat img-fluid" />
+            </div>
+            <div class="card__message">
+                <p class="text">¿Aceptas?</p>
+            </div>
+        </div>
+        <div class="card__footer">
+            <button class="button" data-answer="yes">Sí :3</button>
+            <button class="button button__negative" data-answer="no">No :c</button>
+            <button class="button button__error">Error, debemos reiniciar</button>
+        </div>
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
